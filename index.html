@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .title-image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .description {
+            margin-top: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="pageTitle"></h1>
+    <script src="./constants.js"></script>
+    <script>
+        document.getElementById('pageTitle').textContent = title;
+    </script>
+    
+    <img src="./assets/images/election_commission.png" alt="Title Image" class="title-image">
+    
+    <div class="description">
+        <p id="description"></p>
+    </div>
+    <script>
+        document.getElementById('description').textContent = description;
+    </script>
+</body>
+</html>
